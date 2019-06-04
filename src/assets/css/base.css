@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body, #app, .el-container, .el-menu {
+    height: 100%;
+}
+.iconfont {
+    font-size: 30px;
+}
+.mark {
+    color: #409EFF;
+}
+ul {
+    margin-left: 40px;
+    line-height: 30px;
+}
