@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="father">
         <el-card class="box-card">
             <div slot="header" class="clearfix">
                 <my-bread :breadName="breadName"></my-bread>
@@ -45,7 +45,4 @@ export default {
 </script>
 
 <style>
-    .box-card {
-        min-height: 926px;
-    }
 </style>

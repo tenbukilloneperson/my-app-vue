@@ -5,7 +5,7 @@ body, ul, li, dl, dt, dd, p, h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-html, body, #app, .el-container, .el-menu {
+html, body, #app, .el-container {
   height: 100%;
 }
 
@@ -29,4 +29,5 @@ img {
 
 .box-card {
   min-height: 926px;
+  background: url("../img/Sports.png");
 }

@@ -14,6 +14,7 @@ const router = new Router({
     {
       path: '/home',
       name: 'home',
+      redirect: '/home/passvalue/father-to-son',
       component: () => import('./components/home.vue'),
       children: [
         //  组件间传值
