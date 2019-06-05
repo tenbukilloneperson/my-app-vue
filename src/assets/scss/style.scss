@@ -1,0 +1,22 @@
+@import './_variable';
+/* 公共样式 */
+.iconfont {
+    font-size: 30px;
+  }
+  
+  .mark {
+    color: $maincolor;
+  }
+  
+  ul {
+    margin-left: 40px;
+    line-height: 60px;
+  }
+  
+  img {
+    border-radius: 10px;
+  }
+  
+  .box-card {
+    min-height: 926px;
+  }

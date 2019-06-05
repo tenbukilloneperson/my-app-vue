@@ -1,9 +1,17 @@
 <template>
     <div>
-        <my-card :breadName="breadName">
-            aaa
-        </my-card>
-        <a href=""> aaa</a>
+        <el-card class="box-card">
+            <div slot="header" class="clearfix">
+                <my-bread :breadName="breadName"></my-bread>
+                <my-guide :articleTitle="articleTitle"></my-guide>
+            </div>
+            <el-row>
+                <!-- 主体内容区域 -->
+                <el-col :span="20">
+                    
+                </el-col>
+            </el-row>
+        </el-card>
     </div>
 </template>
 
