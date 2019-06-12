@@ -37,6 +37,16 @@ const router = new Router({
           path: 'passvalue/vuex',
           name: 'Vuex',
           component: () => import('./views/vuex/vuex.vue')
+        },
+        {
+          path: 'passvalue/build',
+          name: 'Build',
+          component: () => import('./views/PassValue/build.vue')
+        },
+        {
+          path: 'es6/promise',
+          name: 'Promise',
+          component: () => import('./views/ES6/promise.vue')
         }
       ]
     }

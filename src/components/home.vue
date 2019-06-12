@@ -50,6 +50,20 @@ export default {
                            routerName: '/home/passvalue/vuex',
                            name: 'Vuex'
                        },
+                       {
+                           routerName: '/home/passvalue/build',
+                           name: 'vue build'
+                       },
+                   ]
+                },
+                {
+                   routerName: '/ES6',
+                   name: 'ES2015',
+                   children: [
+                       {
+                           routerName: '/home/es6/promise',
+                           name: 'Promise'
+                       }
                    ]
                 },
             ]
