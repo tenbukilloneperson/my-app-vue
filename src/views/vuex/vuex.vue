@@ -20,7 +20,8 @@ import { mapState, mapGetters, mapMutations, mpaActions, mapActions} from 'vuex'
 export default {
     data() {
         return {
-            breadName: ['组件传值','Vuex']
+            breadName: ['组件传值','Vuex'],
+            articleTitle:[]
         }
     },
     computed: {

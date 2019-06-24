@@ -1,14 +1,9 @@
 <template>
     <div id="father">
-        <el-card class="box-card">
-            <div slot="header" class="clearfix">
-                <my-bread :breadName="breadName"></my-bread>
-                <my-guide :articleTitle="articleTitle"></my-guide>
-            </div>
-            <el-row>
-                <!-- 主体内容区域 -->
-                <el-col :span="20">
-                    <h2>父传子主要是通过 <span class="mark">Props Down(属性下发)</span>来完成</h2>
+        <l-com :breadName="breadName" :articleTitle="articleTitle">
+            <template slot="content" slot-scope="scope">
+                {{ scope.text }}
+              <h2>父传子主要是通过 <span class="mark">Props Down(属性下发)</span>来完成</h2>
                     <ul>
                         <li>
                             <span>父组件通过绑定属性来下发要传递的值</span>
@@ -19,14 +14,18 @@
                             <div><img src="../../assets/img/props.png" alt="props接收父组件的传值"></div>
                         </li>
                     </ul>
-                </el-col>
-            </el-row>
-        </el-card>
+            </template>
+        </l-com>
     </div>
 </template>
 
 <script>
+import Com from '../../components/base_templete'
+import Vue from 'vue'
 export default {
+    components : {
+        'l-com': Com
+    },
     data() {
        return {
            breadName:['组件传值','父传子'],
@@ -40,6 +39,8 @@ export default {
         getValueFromSon(value) {
             console.log(value)  // 传递组件的值
         }
+    },
+    mounted() {
     }
 }
 </script>
